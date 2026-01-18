@@ -1,0 +1,55 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  background-color: #141414;
+  color: white;
+  min-height: 100 vh;
+  margin-top: 5%;
+}
+
+.search-box {
+  margin-bottom: 50px;
+}
+
+select, button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #e50914;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.movie-card {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card p {
+  margin-top: 10px;
+  font-weight: bold;
+}
