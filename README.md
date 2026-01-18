@@ -98,3 +98,46 @@ For a project using **Content-Based Filtering**, the typical workflow is:
 - Sort movies based on similarity scores
 - Return the **top 5 most similar movies** as recommendations
 
+
+#How to Clone the Files
+## Generate Model Files (`.pkl`)
+
+The core logic and data processing of the project are implemented in a **Jupyter Notebook**.
+
+### Steps
+
+1. Open the **`Movies_Recommendation_system.ipynb`** file on your system.
+2. Run **all the cells** in the notebook.
+3. After the notebook finishes running, **two files will be generated**:
+   - `movie_list.pkl`
+   - `similarity.pkl`
+
+### Important
+
+- **Copy** both of these files  
+- **Paste** them into the **`src/backend/`** folder
+
+---
+
+### Project Folder Structure
+
+```text
+movieRecommendation/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── backend/           # Python Backend Files
+│   │   ├── main.py        # FastAPI Logic
+│   │   ├── movie_list.pkl # Generated from Notebook
+│   │   └── similarity.pkl # Generated from Notebook
+│   ├── App.css
+│   ├── App.jsx            # Main React Component
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+├── README.md
+└── vite.config.js
+```
